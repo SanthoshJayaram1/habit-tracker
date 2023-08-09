@@ -23,9 +23,9 @@ const WeekView = () => {
       <div className="days-container">
         {habit.weekProgress.map((day,index)=><DayView day={day} key={index}/>)}
       </div>
-      <div className="d-grid gap-2 col-6 mx-auto mt-5">
+      <div className="d-grid gap-2 col-2 mx-auto mt-5">
         <button className="btn btn-primary" type="button">
-          <Link to="/">Back to Detail View</Link>
+          <Link to="/">Back to Home</Link>
         </button>
       </div>
     </>

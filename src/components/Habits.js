@@ -7,8 +7,6 @@ const Habits = () => {
 
   // call use selector hook for getting state from reducer
   let habitsState=useSelector((state)=>state.habits);
-  console.log(habitsState);
-  
   
   return (
     <div className='habits'>

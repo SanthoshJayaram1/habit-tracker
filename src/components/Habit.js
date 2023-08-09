@@ -4,36 +4,31 @@ import { deleteHabit } from "../redux/actions";
 import { useNavigate } from "react-router-dom";
 
 const Habit = ({habit}) => {
+
   const today=new Date();
   const todayDay=today.getDay();
   let countDone=0;
+  const navigate=useNavigate();
+  const dispatch=useDispatch();
+
   //loop for getting habit done count
   for (let i = 0; i < habit.weekProgress.length; i++) {
     if(habit.weekProgress[i].isDone===true){
       countDone++;
     }
   }
-  
-  // call use navigate hook from react-router-dom in a navigate varriable 
-  const navigate=useNavigate();
-
-  // call use dispatch hook a variable call dispatch
-  const dispatch=useDispatch();
-
   // function call after click delete button on habit list
   const handleDelete=()=>{
     dispatch(deleteHabit(habit.id));
     alert("your habit deleted successfully")
   }
 
-  // this function call after click week view button
   // this function used for set current habit id to localstorage and navigate to weekview page
   const setId=()=>{
     localStorage.setItem("id",habit.id)
     navigate("/week-view");
   }
-
-  
+ 
   return (
     <div className="habit">
       <div className="habit-left">

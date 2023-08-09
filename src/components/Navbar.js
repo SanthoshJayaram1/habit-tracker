@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { addHabit } from "../redux/actions";
 
-const Navbar = ({ name }) => {
+const Navbar = () => {
   const dispatch=useDispatch();
   // function for add habit 
   const handleSave=()=>{
