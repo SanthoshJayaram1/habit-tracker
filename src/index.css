@@ -1,0 +1,262 @@
+/* style add for all element */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  /* style for body */
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+   
+  }
+  
+  /* style root div */
+  #root {
+    width: 100%;
+  }
+  
+  /* style navbar component  */
+  .navbar {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    padding: 0px 20px;
+    background-color: #c2d7ec;
+    justify-content: space-between;
+  }
+  
+  .first-half {
+    margin-right: 2px;
+  }
+  
+  .last-half {
+    background-color: #000000;
+    color: #f5f6f7;
+  }
+  
+  .right-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-nav h5 {
+    color: #dddddd;
+    margin-right: 10px;
+  }
+  
+  .addhabit-btn {
+    cursor: pointer;
+    color: white;
+    background-color: #3bcc36;
+    padding: 8px 20px;
+    border-radius: 7px;
+  }
+  
+  /* modal */
+  .modal-content {
+    background-color: #333333;
+  }
+  
+  .modal-header {
+    border: none;
+  }
+  
+  .modal-footer {
+    border: none;
+  }
+  /* habits components style*/
+  .habits {
+    width: 100%;
+    background-color: white;
+  }
+  
+  /* habit under habits component */
+  .habit {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .habit-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .habit-left i {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #304950;
+    margin-right: 10px;
+  }
+  
+  .day-complete {
+    color: #767475;
+    font-size: small;
+  }
+  
+  .habit-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .log-btn {
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #111010;
+    border: none;
+    padding: 10px;
+    border: 2px solid #111111;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .log-btn:hover {
+    color: rgb(255, 255, 255);
+    transition-duration: 0.8s;
+    background-color: rgb(5, 5, 5);
+  }
+  
+  .log-btn i {
+    margin-right: 5px;
+  }
+  
+  .fa-trash {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid #000000;
+    background-color: white;
+  }
+  
+  .fa-trash:hover {
+    color: rgb(255, 255, 255);
+    transition-duration: 0.8s;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .task-container {
+    display: flex;
+  }
+  
+  .navbar button {
+    background-color: transparent;
+    border-radius: 12px;
+    color: #111010;
+    border: 2px solid #111111;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover {
+    color: rgb(255, 255, 255);
+    transition-duration: 0.8s;
+    background-color: rgb(5, 5, 5);
+  }
+  
+  /* style week view container */
+  .days-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  /* style day view component */
+  p {
+    margin: 0%;
+  }
+  
+  .circle-icon {
+    font-size: 24px;
+    margin: 5px 11px;
+    cursor: pointer;
+  }
+  
+  .active {
+    color: #0b5ed7;
+  }
+
+  /* style day view component for week view */
+.day-view {
+    flex: 1;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .day-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .circle-icon {
+    font-size: 24px;
+    margin-top: auto; 
+    cursor: pointer;
+  }
+  
+  .active {
+    color: #0b5ed7;
+  }
+
+  /* habitquotation */
+  .quote {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 700px;
+    font-weight: 600;
+    border-left: 2px solid #3498db;
+    padding-left: 20px;
+}
+
+.author {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+}
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .days-container {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .day-view {
+      width: 90%;
+    }
+  }
+  
+  
